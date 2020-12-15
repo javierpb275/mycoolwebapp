@@ -21,6 +21,13 @@
   
   <dependencies>
 
+	<!-- Add support for Atlassian Mail: atlassian-mail -->
+	<dependency>
+    <groupId>com.atlassian.mail</groupId>
+    <artifactId>atlassian-mail</artifactId>
+    <version>5.1.0</version>
+</dependency>
+
 	<!-- Add support for Hibernate: hibernate-core -->
 	<dependency>
 		<groupId>org.hibernate</groupId>
@@ -43,6 +50,14 @@
 	</dependency>
 
 </dependencies>
+
+<repositories>
+	<repository>
+		<id>atlassian</id>
+		<name>the atlassian repo</name>
+		<url>https://maven.atlassian.com/content/repositories/atlassian-public/</url>
+	</repository>
+</repositories>
 
   <build>
     <finalName>mycoolwebapp</finalName>
